@@ -10,37 +10,33 @@
   </head>
   <body>
 
- <h1 id="heading">CALCULATOR</h1>
+ <table class="calculator-whole">
+  <tr>
+    <td colspan="3"><input class="display-area" type="text" id="result" disabled/></td>
+    <td><input type="button" value="AC" onclick="clearScreen()" id="button"/></td>
+  </tr>
 
-    <div class="calculator-whole">
-      <!--Output screen area-->
-        <div class="output">
-            <div class="previous">705 +</div>
-            <div class="current">901</div>
-        </div>
+  <tr>
+  <td><input type="button" value="1" onclick="display(1)"/></td>
+  <td><input type="button" value="2" onclick="display(2)"/></td>
+  <td><input type="button" value="3" onclick="display(3)"/></td> 
+  <td><input type="button" value="+" onclick="display(+)"/></td>
+  </tr>
 
-        <!--Button area-->
-            <button class="span-two">AC</button>
-            <button>DEL</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>x</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>÷</button>
-            <button id="bottom-left-corner">.</button>
-            <button>0</button>
-            <button class="span-two" id="bottom-right-corner">=</button>
+  <tr>
+    <td><input type="button" value="4" onclick="display(4)"/></td>
+    <td><input type="button" value="5" onclick="display(5)"/></td>
+    <td><input type="button" value="6" onclick="display(6)"/></td>
+    <td><input type="button" value="-" onclick="display(-)"/></td>
+  </tr>
 
-    </div>
-
+  <tr>
+    <td><input type="button" value="7" onclick="display(7)"/></td>
+    <td><input type="button" value="8" onclick="display(8)"/></td>
+    <td><input type="button" value="9" onclick="display(9)"/></td>
+    <td><input type="button" value="/" onclick="display(÷)"/></td>
+  </tr>
+ </table>
 	<script src="index.js"></script>
   </body>
 </html>
