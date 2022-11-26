@@ -10,33 +10,37 @@
   </head>
   <body>
 
- <table class="calculator-whole">
-  <tr>
-    <td colspan="3"><input class="display-area" type="text" id="result" disabled/></td>
-    <td><input type="button" value="AC" onclick="clearScreen()" id="button"/></td>
-  </tr>
+    <h1 id="heading">CALCULATOR</h1>
+      <div class="calc">
+       <!-- Output screen area -->
+         <!-- <div class="output">
+             <div class="previous" data-previous></div>
+             <div class="current" data-current></div>
+         </div> -->
 
-  <tr>
-  <td><input type="button" value="1" onclick="display(1)"/></td>
-  <td><input type="button" value="2" onclick="display(2)"/></td>
-  <td><input type="button" value="3" onclick="display(3)"/></td> 
-  <td><input type="button" value="+" onclick="display(+)"/></td>
-  </tr>
-
-  <tr>
-    <td><input type="button" value="4" onclick="display(4)"/></td>
-    <td><input type="button" value="5" onclick="display(5)"/></td>
-    <td><input type="button" value="6" onclick="display(6)"/></td>
-    <td><input type="button" value="-" onclick="display(-)"/></td>
-  </tr>
-
-  <tr>
-    <td><input type="button" value="7" onclick="display(7)"/></td>
-    <td><input type="button" value="8" onclick="display(8)"/></td>
-    <td><input type="button" value="9" onclick="display(9)"/></td>
-    <td><input type="button" value="/" onclick="display(÷)"/></td>
-  </tr>
- </table>
+         <!--Button area-->
+         <input class="display-screen" type="text" id="screen" disabled />
+        <input type="button"  value="AC" onclick="clearspace()" />
+        <input type="button"  value="DEL" onclick="deletespace()" />
+        <input type="button" value="+" onclick="display('+')" />
+        <input type="button" value="1" onclick="display('1')" />
+        <input type="button" value="2" onclick="display('2')" />
+        <input type="button" value="3" onclick="display('3')" />
+        <input type="button" value="-" onclick="display('-')" />
+        <input type="button" value="4" onclick="display('4')" />
+        <input type="button" value="5" onclick="display('5')" />
+        <input type="button" value="6" onclick="display('6')" />
+        <input type="button" value="*" onclick="display('*')" />
+        <input type="button" value="7" onclick="display('7')" />
+        <input type="button" value="8" onclick="display('8')" />
+        <input type="button" value="9" onclick="display('9')" />
+        <input type="button" value="/" onclick="display('/')" />
+        <input type="button" value="." onclick="display('.')" /> 
+        <input type="button" value="0" onclick="display('0')" />
+        <input type="button" value="(" onclick="display('(')" />
+        <input type="button" value=")" onclick="display(')')" />
+        <input type="button" value="=" onclick="calculate()" />
+        </div>
 	<script src="index.js"></script>
   </body>
 </html>
