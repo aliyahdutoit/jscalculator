@@ -33,7 +33,7 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     box-shadow: 10px 10px 10px 10px black;
 }
-button {
+input {
     cursor: pointer;
     font-size: 2rem;
     border: 3px solid rgb(206, 121, 206);
@@ -42,24 +42,24 @@ button {
     color: white;
     min-width: 20px;
     min-height: 20px;
-
+    
 }
 
 
-/* #bottom-left-corner {
+#bottom-left-corner {
     border-bottom-left-radius: 40px;
 }
 #bottom-right-corner {
     border-bottom-right-radius: 40px;
-} */
+}
 
 
-.span-two {
+#span-two {
     grid-column: span 2;
 }
 #screen {
     grid-column: 1 / -1;
-    background-color: grey;
+    background-color: black;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
